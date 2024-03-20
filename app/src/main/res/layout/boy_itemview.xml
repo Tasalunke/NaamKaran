@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="16dp"
+        app:cardBackgroundColor="#eaea99">
+
+        <TextView
+            android:id="@+id/text_name_boy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Name:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_meaning_boy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="Meaning"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:id="@+id/heart_button"
+                android:layout_width="73dp"
+                android:layout_height="38dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="160dp"
+                android:padding="1dp"
+                android:src="@drawable/heart"/>
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="73dp"
+                android:layout_height="38dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="120dp"
+                android:padding="1dp"
+                android:src="@drawable/share_logo" />
+
+            <ImageView
+                android:id="@+id/copy"
+                android:layout_width="73dp"
+                android:layout_height="38dp"
+                android:layout_toStartOf="@id/share"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="120dp"
+                android:padding="1dp"
+                android:src="@drawable/copy_logo" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
